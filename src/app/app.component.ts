@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  isHomeView=true;
+
+  homeClick(){
+    this.isHomeView=true;
+  }
+  tasksClick(){
+    this.isHomeView=false;
+  }
 }
